@@ -1,0 +1,22 @@
+[
+    {
+        "id": "e191b145ee085f04",
+        "type": "function",
+        "z": "206730fd3ba74447",
+        "name": "Build API URL",
+        "func": "const apiKey = 'e18bebca547247989bf83856242209'; // Replace with your actual API key\nconst country = msg.payload; // Selected country from dropdown\n\n// Build the WeatherAPI URL with the selected country\nmsg.url = `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${country}&aqi=yes`;\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 260,
+        "y": 300,
+        "wires": [
+            [
+                "cf1392c3cc5d589a"
+            ]
+        ]
+    }
+]
